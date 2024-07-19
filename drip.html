@@ -57,7 +57,8 @@
                 <a href="men.html">
                     <img src="https://img.freepik.com/premium-vector/modern-fashionable-black-man-elegant-line-art-style-vector_72948-456.jpg" alt="Men's Clothing" class="w-full h-40 object-cover rounded-lg mb-4">
                     <h2 class="text-xl font-semibold" id="men">Men's Clothing</h2>
-                </a>
+            </a>
+                
             </div>
             <div class="category bg-gray-100 p-4 rounded-lg shadow-md" id="women-clothes">
                 <a href="women.html">
@@ -102,6 +103,13 @@
  
 
 
-    <script src="drip.js"></script>
+    <script >//Calling Elements
+        const modal = document.getElementById('modal');
+        const signInButton = document.querySelector('button');
+        
+        // Adding Event Listener
+        signInButton.addEventListener('click', () => {
+          modal.classList.toggle('hidden');
+        });</script>
 </body>
 </html>
